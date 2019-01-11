@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="邀请好友一起赚佣"
+                    android:textColor="#333333"
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtInvateGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_invate_guide_logo"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="邀请指南"
+                    android:textColor="#999999"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingBottom="35dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:transitionName="button1"
+                android:paddingTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txtTotalInvate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="当前已邀请n位好友升级经纪人>>"
+                android:textColor="#333333"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/txtInvateWX"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:background="#ff6060"
+                android:gravity="center"
+                android:text="分享邀请海报"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtInvateALL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="分享邀请链接"
+                android:textColor="#333333"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:id="@+id/ivTT"
+                android:background="#ff6060"
+                android:scaleType="fitXY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,19 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textColor="#ff6060"
+        android:textSize="20dp"
+        android:visibility="visible"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/viewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#c7f757"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="haha"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#ff6060"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInvateWX"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:background="#ff6060"
+        android:gravity="center"
+        android:text="分享邀请海报"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:transitionName="button1"
+        android:textStyle="bold"/>
+
+    <com.example.lyc.transferanimation.VerticalScrollTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtS"
+        android:layout_marginTop="90dp"></com.example.lyc.transferanimation.VerticalScrollTextview>
+
+</RelativeLayout>
